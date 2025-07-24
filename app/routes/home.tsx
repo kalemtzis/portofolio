@@ -1,13 +1,39 @@
+import ThemeToogle from "~/Components/ThemeToggle";
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import StarBackground from "~/Components/StarBackground";
+import Navbar from "~/Components/Navbar";
+import HeroSection from "~/Components/HeroSection";
+import AboutSection from "~/Components/AboutSection";
+import SkillsSection from "~/Components/SkillsSection";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Welcome | Portofolio" },
+    { name: "description", content: "Portofolio Vasilis Kalemtzis" },
   ];
 }
 
-export default function Home() {
-  return <Welcome />;
+const Home = () => {
+  return (
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      {/* Theme toggle (dark/light) */}
+      <ThemeToogle />
+      
+      {/* Background Effects */}
+      <StarBackground />
+      
+      {/* Navbar */}
+      <Navbar />
+      {/* Main Content */}
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+      </main>
+
+      {/* Footer */}
+    </div>
+  )
 }
+
+export default Home;
