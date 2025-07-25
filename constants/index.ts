@@ -1,4 +1,4 @@
-import { Briefcase, Code, User, type LucideIcon } from "lucide-react";
+import { Briefcase, Code, User } from "lucide-react";
 
 export const CardInformation = [
     {
@@ -22,7 +22,7 @@ export const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#Projects' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
 ]
 
@@ -97,4 +97,36 @@ export const websiteLinks = [
     'https://www.figma.com/',
     'https://jupyter.org/',
     'https://code.visualstudio.com/',
+]
+
+export const projects = [
+    {
+        id: 1,
+        title: 'Saas Landing Page',
+        description: 'A beautiful landing page app using React and Tailwind CSS.',
+        image: "/projects/project1.png",
+        tags: ['React', 'TailwindCSS', 'Superbase'],
+        demoUrl: "#",
+        githubUrl: "#",
+    },
+    {
+        id: 2,
+        title: "Orbit Analytics Dashboard",
+        description:
+        "Interactive analytics dashboard with data visualization and filtering capabilities.",
+        image: "/projects/project2.png",
+        tags: ["TypeScript", "D3.js", "Next.js"],
+        demoUrl: "#",
+        githubUrl: "#",
+    },
+    {
+        id: 3,
+        title: "E-commerce Platform",
+        description:
+        "Full-featured e-commerce platform with user authentication and payment processing.",
+        image: "/projects/project3.png",
+        tags: ["React", "Node.js", "Stripe"],
+        demoUrl: "#",
+        githubUrl: "#",
+    },
 ]

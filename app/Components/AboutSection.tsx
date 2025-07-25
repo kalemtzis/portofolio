@@ -31,12 +31,8 @@ const AboutSection = () => {
                     </div>
                     
                     <div className="grid grid-cols-1 gap-6"> 
-                        {CardInformation.map((info) => (
-                            <Card 
-                                title={info.title}
-                                desc={info.desc}
-                                icon={info.icon}
-                            />
+                        {CardInformation.map((info, key) => (
+                            <Card info={info} key={key} />
                         ))}
                     </div>
                 </div>

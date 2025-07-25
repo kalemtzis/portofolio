@@ -5,6 +5,8 @@ import Navbar from "~/Components/Navbar";
 import HeroSection from "~/Components/HeroSection";
 import AboutSection from "~/Components/AboutSection";
 import SkillsSection from "~/Components/SkillsSection";
+import ProjectSection from "~/Components/ProjectSection";
+import ContactSection from "~/Components/ContactSection";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -29,6 +31,8 @@ const Home = () => {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <ProjectSection />
+        <ContactSection />
       </main>
 
       {/* Footer */}
