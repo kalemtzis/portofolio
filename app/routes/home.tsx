@@ -7,6 +7,7 @@ import AboutSection from "~/Components/AboutSection";
 import SkillsSection from "~/Components/SkillsSection";
 import ProjectSection from "~/Components/ProjectSection";
 import ContactSection from "~/Components/ContactSection";
+import Footer from "~/Components/Footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -36,6 +37,7 @@ const Home = () => {
       </main>
 
       {/* Footer */}
+      <Footer />
     </div>
   )
 }
