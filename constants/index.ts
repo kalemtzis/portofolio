@@ -30,73 +30,45 @@ export interface Skill {
     name: string;
     level: number;
     category: string;
+    url: string;
 }
 
 export const skills: Skill[] = [
     // Frontend
-    { name: "HTML/CSS", level: 95, category: "frontend" },
-    { name: "JavaScript", level: 90, category: "frontend" },
-    { name: "React", level: 90, category: "frontend" },
-    { name: "TypeScript", level: 85, category: "frontend" },
-    { name: "Tailwind CSS", level: 90, category: "frontend" },
-    { name: "Next.js", level: 80, category: "frontend" },
+    { name: "HTML/CSS", level: 95, category: "frontend", url: 'https://en.wikipedia.org/wiki/HTML' },
+    { name: "JavaScript", level: 90, category: "frontend", url: 'https://en.wikipedia.org/wiki/JavaScript' },
+    { name: "React", level: 90, category: "frontend", url: 'https://react.dev/' },
+    { name: "TypeScript", level: 85, category: "frontend", url: 'https://www.typescriptlang.org/' },
+    { name: "Tailwind CSS", level: 90, category: "frontend", url: 'https://tailwindcss.com/' },
+    { name: "Next.js", level: 80, category: "frontend", url: 'https://nextjs.org/' },
 
     // Backend
-    { name: "Node.js", level: 80, category: "backend" },
-    { name: "Express", level: 75, category: "backend" },
-    { name: "MongoDB", level: 70, category: "backend" },
-    { name: "PostgreSQL", level: 65, category: "backend" },
-    { name: "GraphQL", level: 60, category: "backend" },
+    { name: "Node.js", level: 80, category: "backend", url: 'https://nodejs.org/en' },
+    { name: "Express", level: 75, category: "backend", url: 'https://expressjs.com/' },
+    { name: "MongoDB", level: 70, category: "backend", url: 'https://www.mongodb.com/' },
+    { name: "PostgreSQL", level: 65, category: "backend", url: 'https://www.postgresql.org/' },
+    { name: "GraphQL", level: 60, category: "backend", url: 'https://graphql.org/' },
     
     // AI-ML
-    {name: 'TensorFlow', level: 95, category: 'ML'},
-    {name: 'PyTorch', level: 95, category: 'ML'},
-    {name: 'Jax', level: 95, category: 'ML'},
-    {name: 'Scikit-Learn', level: 95, category: 'ML'},
-    {name: 'Optuna', level: 95, category: 'ML'},
+    {name: 'TensorFlow', level: 95, category: 'ML', url: 'https://www.tensorflow.org/'},
+    {name: 'PyTorch', level: 95, category: 'ML', url: 'https://pytorch.org/'},
+    {name: 'Jax', level: 95, category: 'ML', url: 'https://docs.jax.dev/en/latest/index.html'},
+    {name: 'Scikit-Learn', level: 95, category: 'ML', url: 'https://scikit-learn.org/stable/'},
+    {name: 'Optuna', level: 95, category: 'ML', url: 'https://optuna.org/'},
 
     // Data Analysis
-    { name: 'NumPy', level: 95, category: 'data' },
-    { name: 'Seaborn', level: 95, category: 'data' },
-    { name: 'Matplotlib', level: 95, category: 'data' },
-    { name: 'Pandas', level: 95, category: 'data' },
-    { name: 'Streamlit', level: 95, category: 'data' },
+    { name: 'NumPy', level: 95, category: 'data', url: 'https://numpy.org/' },
+    { name: 'Seaborn', level: 95, category: 'data', url: 'https://seaborn.pydata.org/' },
+    { name: 'Matplotlib', level: 95, category: 'data', url: 'https://matplotlib.org/' },
+    { name: 'Pandas', level: 95, category: 'data', url: 'https://pandas.pydata.org/' },
+    { name: 'Streamlit', level: 95, category: 'data', url: 'https://streamlit.io/' },
 
     // Tools
-    { name: "Git/GitHub", level: 90, category: "tools" },
-    { name: "Docker", level: 70, category: "tools" },
-    { name: "Figma", level: 85, category: "tools" },
-    { name: 'Jupyter Notebook', level: 90, category: 'tools' },
-    { name: "VS Code", level: 95, category: "tools" },
-]
-
-export const websiteLinks = [
-    'https://en.wikipedia.org/wiki/HTML',
-    'https://en.wikipedia.org/wiki/JavaScript',
-    'https://react.dev/',
-    'https://www.typescriptlang.org/',
-    'https://tailwindcss.com/',
-    'https://nextjs.org/',
-    'https://nodejs.org/en',
-    'https://expressjs.com/',
-    'https://www.mongodb.com/',
-    'https://www.postgresql.org/',
-    'https://graphql.org/',
-    'https://www.tensorflow.org/',
-    'https://pytorch.org/',
-    'https://docs.jax.dev/en/latest/index.html',
-    'https://scikit-learn.org/stable/',
-    'https://optuna.org/',
-    'https://numpy.org/',
-    'https://seaborn.pydata.org/',
-    'https://matplotlib.org/',
-    'https://pandas.pydata.org/',
-    'https://streamlit.io/',
-    'https://git-scm.com/',
-    'https://www.docker.com/',
-    'https://www.figma.com/',
-    'https://jupyter.org/',
-    'https://code.visualstudio.com/',
+    { name: "Git/GitHub", level: 90, category: "tools", url: 'https://git-scm.com/' },
+    { name: "Docker", level: 70, category: "tools", url: 'https://www.docker.com/' },
+    { name: "Figma", level: 85, category: "tools", url: 'https://www.figma.com/' },
+    { name: 'Jupyter Notebook', level: 90, category: 'tools', url: 'https://jupyter.org/' },
+    { name: "VS Code", level: 95, category: "tools", url: 'https://code.visualstudio.com/' },
 ]
 
 export const projects = [

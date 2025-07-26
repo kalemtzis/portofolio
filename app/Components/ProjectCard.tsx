@@ -17,7 +17,7 @@ const ProjectCard = ({ info }: ProjectCardProps) => {
         <div className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover hover:backdrop-blur-lg">
             <h3 className="text-xl font-semibold mb-2 pb-2 px-4">{info.title}</h3>
 
-            <div className="flex justify-between justify-start">
+            <div className="flex justify-between items-start">
                 <div className="flex space-x-3 pb-4 px-4">
                     <a href={info.demoUrl} className="text-foreground/80 hover:text-primary transition-colors duration-300" target="_blank">
                         <ExternalLink size={20}/>

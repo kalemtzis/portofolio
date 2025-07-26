@@ -80,7 +80,7 @@ const StarBackground = () => {
                     width: `${star.size}px`,
                     height: `${star.size}px`,
                     left: `${star.x}%`,
-                    right: `${star.y}%`,
+                    top: `${star.y}%`,
                     opacity: star.opacity,
                     animationDuration: `${star.animationDuration}s`
                 }} />
