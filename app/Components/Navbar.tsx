@@ -1,6 +1,7 @@
-import { MenuIcon, X } from "lucide-react";
+import { CircleUser, MenuIcon, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { cn } from "~/lib/utils";
+import { HoverCard } from "radix-ui";
 import { navItems } from "constants/index";
 
 const Navbar = () => {
@@ -36,6 +37,38 @@ const Navbar = () => {
                             {item.name}
                         </a>
                     ))}
+
+                    <HoverCard.Root>
+                        <HoverCard.Trigger asChild>
+                            <a href="https://github.com/kalemtzis" className="ImageTrigger" target="_blank">
+                                <CircleUser />
+                            </a>
+                        </HoverCard.Trigger>
+                        <HoverCard.Portal>
+                            <HoverCard.Content className="HoverCardContent mt-2 px-4 shadow-xl card" sideOffset={0}>
+                                <div className="flex flex-col gap-8">
+                                    <CircleUser size={30} />
+                                
+                                    <div className="flex flex-col gap-4">
+                                        <div>
+                                            <div className="text-bold">KalemTech</div>
+                                            <a 
+                                                href="https://github.com/kalemtzis" 
+                                                target="_blank" 
+                                                className="text-gray-500 hover:text-primary transition-colors duration-300"
+                                            >
+                                                @kalemtzis
+                                            </a>
+                                        </div>
+                                        <div>   
+                                            Description
+                                        </div>
+                                    </div>
+                                </div>
+                                <HoverCard.Arrow className="HoverCardArrow" />
+                            </HoverCard.Content>
+                        </HoverCard.Portal>
+                    </HoverCard.Root>
                 </div>
 
                 {/* Mobile Navbar */}
